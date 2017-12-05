@@ -1,0 +1,16 @@
+Robot Control Screen
+
+Connectivity Status
+
+Barcode Reading
++On robot
+
+Warehouse Improvements
++swap location suggestion
+	+swap most common with nearest least common
+
+show list of free locations on update screen
+
+Weights
+
+Multiple Journeys

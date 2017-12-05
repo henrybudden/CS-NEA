@@ -1,0 +1,22 @@
+import ThunderBorg
+TB = ThunderBorg.ThunderBorg()
+
+TB.MotorsOff()
+TB.SetLed1(r,g,b) # Values 0 to 1
+TB.SetMotors(0) # Value -1 to 1
+TB.SetMotor1(0) # Value -1 to 1
+TB.SetMotor2(0) # Value -1 to 1
+
+TB.GetMotor1() # Returns Motor value -1 to 1
+TB.GetMotor2() # Returns Motor value -1 to 1
+
+TB.SetLedShowBattery(enabled) # Set the LED to show the battery status
+TB.GetBatteryReading() # Returns battery charge status
+
+
+(The failsafe will turn the motors off unless it is commanded at least once every 1/4 of a second)
+TB.SetCommsFailsafe(enabled)            # Set if the communications failsafe is active
+TB.GetCommsFailsafe()                   # Read if the communications failsafe is active
+ 
+TB.GetDriveFault1()                     # See if there is a fault reported for M1
+TB.GetDriveFault2()			# See if there is a fault reported for M1
